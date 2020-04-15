@@ -14,3 +14,16 @@ olympics = {"gold": 7, "silver": 8, "bronze": 6}
 swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
 
 swimmers["Phelps"] = swimmers["Phelps"] + 5
+
+
+#11.4 #5. Every four years, the summer Olympics are held in a different country. Add a key-value pair to the dictionary places that reflects that the 2016 Olympics were held in Brazil. Do not rewrite the entire dictionary to do this!
+
+places = {"Australia":2000, "Greece":2004, "China":2008, "England":2012}
+places["Brazil"] = 2016
+
+
+#6. We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable events a list of the keys from the dictionary medal_events. Do not hard code this.
+
+medal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+events = list(medal_events.keys())
+print(events)
