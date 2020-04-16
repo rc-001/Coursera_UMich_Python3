@@ -1,0 +1,45 @@
+#1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable medal_count with the country names as the keys and the number of medals the country had as each key’s value.
+
+medal_count = {"United States":70, "Great Britain": 38, "China": 45, "Russia": 30, "Germany":17}
+
+
+#2. Given the dictionary swimmers, add an additional key-value pair to the dictionary with "Phelps" as the key and the integer 23 as the value. Do not rewrite the entire dictionary.
+
+swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
+swimmers["Phelps"] = 23
+
+
+#3. Add the string “hockey” as a key to the dictionary sports_periods and assign it the value of 3. Do not rewrite the entire dictionary.
+
+sports_periods = {'baseball': 9, 'basketball': 4, 'soccer': 4, 'cricket': 2}
+sports_periods["hockey"] = 3
+
+
+#4. The dictionary golds contains information about how many gold medals each country won in the 2016 Olympics. But today, Spain won 2 more gold medals. Update golds to reflect this information.
+
+golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
+golds["Spain"] = golds["Spain"] + 2
+
+
+$5. Create a list of the countries that are in the dictionary golds, and assign that list to the variable name countries. Do not hard code this.
+
+golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
+countries = list(golds)
+print(countries)
+
+
+#6. Provided is the dictionary, medal_count, which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary mechanics, assign the medal count value for "Belarus" to the variable belarus. Do not hardcode this.
+
+belarus = medal_count.get("Belarus")
+print(belarus)
+
+
+#7. The dictionary total_golds contains the total number of gold medals that countries have won over the course of history. Use dictionary mechanics to find the number of golds Chile has won, and assign that number to the variable name chile_golds. Do not hard code this!
+
+chile_golds = total_golds.get("Chile")
+print(chile_golds)
+
+
+#8. Provided is a dictionary called US_medals which has the first 70 metals that the United States has won in 2016, and in which category they have won it in. Using dictionary mechanics, assign the value of the key "Fencing" to a variable fencing_value. Remember, do not hard code this.
+
+fencing_value = US_medals["Fencing"]
