@@ -48,3 +48,50 @@ for c in stri:
         char_d[c] = 0
     char_d[c] = char_d[c] + 1
 print(char_d)
+
+#11.7 
+
+#1. The dictionary travel contains the number of countries within each continent that Jackie has traveled to. Find the total number of countries that Jackie has been to, and save this number to the variable name total. Do not hard code this!
+
+total = 0
+for continent in travel: 
+    total = total + travel[continent]
+
+#2. schedule is a dictionary where a class name is a key and its value is how many credits it was worth. Go through and accumulate the total number of credits that have been earned so far and assign that to the variable total_credits. Do not hardcode.
+
+total_credits = 0
+for course in schedule: 
+    total_credits = total_credits + schedule[course]
+    
+#11.8
+#1. Create a dictionary called d that keeps track of all the characters in the string placement and notes how many times each character was seen. Then, find the key with the lowest value in this dictionary and assign that key to min_value. 
+
+d = {}
+for c in placement:
+    if c not in d: 
+        d[c] = 0
+    d[c] = d[c] + 1
+print(d)
+ks = d.keys()
+min_value = list(ks)[0]  
+for k in ks:
+    if d[k] < d[min_value]:
+        min_value = k
+print("key " + min_value + " has the lowest value, " + str(d[min_value]))
+
+#2. Create a dictionary called lett_d that keeps track of all of the characters in the string product and notes how many times each character was seen. Then, find the key with the highest value in this dictionary and assign that key to max_value.
+
+lett_d = {}
+for c in product:
+    if c not in lett_d: 
+        lett_d[c] = 0
+    lett_d[c] = lett_d[c] + 1
+print(lett_d)
+ks = lett_d.keys()
+max_value = list(ks)[0]  
+for k in ks:
+    if lett_d[k] > lett_d[max_value]:
+        max_value = k
+print("key " + max_value + " has the highest value, " + str(lett_d[max_value]))
+
+
