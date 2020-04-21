@@ -23,9 +23,25 @@ def intro(x):
 def s_change(x): 
     return(x + " for fun.")
 
-14. Write a function called decision that takes a string as input, and then checks the number of characters. If it has over 17 characters, return “This is a long string”, if it is shorter or has 17 characters, return “This is a short string”.
+#14. Write a function called decision that takes a string as input, and then checks the number of characters. If it has over 17 characters, return “This is a long string”, if it is shorter or has 17 characters, return “This is a short string”.
 def decision(x):
     if len(x) > 17:
         return ("This is a long string")
     else: 
         return("This is a short string")
+        
+#1. Write a function named total that takes a list of integers as input, and returns the total value of all those integers added together.
+
+def total(x): 
+    sum = 0
+    for num in x: 
+        sum =  sum + num
+    return sum
+y = total([1, 5, 7])
+print(y)
+
+#2. Write a function called count that takes a list of numbers as input and returns a count of the number of elements in the list.
+def count(x): 
+    return len(x)
+
+
