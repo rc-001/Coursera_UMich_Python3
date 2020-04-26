@@ -1,46 +1,60 @@
-#1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable medal_count with the country names as the keys and the number of medals the country had as each key’s value.
+#1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, 
+#China had 45 medals, Russia had 30 medals, and Germany had 17 medals. 
+#Create a dictionary assigned to the variable medal_count with the country names as the keys and the number of medals the 
+#country had as each key’s value.
 
 medal_count = {"United States":70, "Great Britain": 38, "China": 45, "Russia": 30, "Germany":17}
 
 
-#2. Given the dictionary swimmers, add an additional key-value pair to the dictionary with "Phelps" as the key and the integer 23 as the value. Do not rewrite the entire dictionary.
+#2. Given the dictionary swimmers, add an additional key-value pair to the dictionary with "Phelps" as 
+#the key and the integer 23 as the value. Do not rewrite the entire dictionary.
 
 swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
 swimmers["Phelps"] = 23
 
 
-#3. Add the string “hockey” as a key to the dictionary sports_periods and assign it the value of 3. Do not rewrite the entire dictionary.
+#3. Add the string “hockey” as a key to the dictionary sports_periods and assign it the value of 3. 
+#Do not rewrite the entire dictionary.
 
 sports_periods = {'baseball': 9, 'basketball': 4, 'soccer': 4, 'cricket': 2}
 sports_periods["hockey"] = 3
 
 
-#4. The dictionary golds contains information about how many gold medals each country won in the 2016 Olympics. But today, Spain won 2 more gold medals. Update golds to reflect this information.
+#4. The dictionary golds contains information about how many gold medals each country won in the 2016 Olympics. 
+#But today, Spain won 2 more gold medals. Update golds to reflect this information.
 
 golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 golds["Spain"] = golds["Spain"] + 2
 
 
-$5. Create a list of the countries that are in the dictionary golds, and assign that list to the variable name countries. Do not hard code this.
+$5. Create a list of the countries that are in the dictionary golds, and assign that list to the variable name countries. 
+#Do not hard code this.
 
 golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 countries = list(golds)
 print(countries)
 
 
-#6. Provided is the dictionary, medal_count, which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary mechanics, assign the medal count value for "Belarus" to the variable belarus. Do not hardcode this.
+#6. Provided is the dictionary, medal_count, which lists countries and their respective medal count 
+#at the halfway point in the 2016 Rio Olympics. 
+#Using dictionary mechanics, assign the medal count value for "Belarus" to the variable belarus. 
+#Do not hardcode this.
 
 belarus = medal_count.get("Belarus")
 print(belarus)
 
 
-#7. The dictionary total_golds contains the total number of gold medals that countries have won over the course of history. Use dictionary mechanics to find the number of golds Chile has won, and assign that number to the variable name chile_golds. Do not hard code this!
+#7. The dictionary total_golds contains the total number of gold medals that countries have won over the course of history. 
+#Use dictionary mechanics to find the number of golds Chile has won, and assign that number to the variable name chile_golds. 
+#Do not hard code this!
 
 chile_golds = total_golds.get("Chile")
 print(chile_golds)
 
 
-#8. Provided is a dictionary called US_medals which has the first 70 metals that the United States has won in 2016, and in which category they have won it in. Using dictionary mechanics, assign the value of the key "Fencing" to a variable fencing_value. Remember, do not hard code this.
+#8. Provided is a dictionary called US_medals which has the first 70 metals that the United States has won in 2016, 
+#and in which category they have won it in. 
+#Using dictionary mechanics, assign the value of the key "Fencing" to a variable fencing_value. Remember, do not hard code this.
 
 fencing_value = US_medals["Fencing"]
 
@@ -48,7 +62,10 @@ fencing_value = US_medals["Fencing"]
 #2nd Assessment
 
 
-#1. The dictionary Junior shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable credits. Do not hardcode this – use dictionary accumulation!
+#1. The dictionary Junior shows a schedule for a junior year semester. 
+#The key is the course name and the value is the number of credits. 
+#Find the total number of credits taken this semester and assign it to the variable credits. 
+#Do not hardcode this – use dictionary accumulation!
 
 credits = 0 
 for score in Junior: 
@@ -66,7 +83,8 @@ for c in str1:
 print(freq)   
 
 
-#3. Provided is a string saved to the variable name s1. Create a dictionary named counts that contains each letter in s1 and the number of times it occurs.
+#3. Provided is a string saved to the variable name s1. 
+#Create a dictionary named counts that contains each letter in s1 and the number of times it occurs.
 
 counts = {}
 for c in s1:
@@ -87,7 +105,8 @@ for c in str1:
 print(freq_words)   
 
 
-#5. Create a dictionary called wrd_d from the string sent, so that the key is a word and the value is how many times you have seen that word.
+#5. Create a dictionary called wrd_d from the string sent, 
+#so that the key is a word and the value is how many times you have seen that word.
 
 sent = sent.split()
 wrd_d = {}
@@ -98,7 +117,8 @@ for c in sent:
 print(wrd_d)   
 
 
-#6. Create the dictionary characters that shows each character from the string sally and its frequency. Then, find the most frequent letter based on the dictionary. Assign this letter to the variable best_char.
+#6. Create the dictionary characters that shows each character from the string sally and its frequency. 
+#Then, find the most frequent letter based on the dictionary. Assign this letter to the variable best_char.
 
 characters = {}
 for c in sally:
@@ -114,7 +134,8 @@ for k in ks:
 print("key " + best_char + " has the lowest value, " + str(characters[best_char]))
 
 
-#7. Find the least frequent letter. Create the dictionary characters that shows each character from string sally and its frequency. Then, find the least frequent letter in the string and assign the letter to the variable worst_char.
+#7. Find the least frequent letter. Create the dictionary characters that shows each character from string sally and its frequency. 
+#Then, find the least frequent letter in the string and assign the letter to the variable worst_char.
 
 characters = {}
 for c in sally:
@@ -130,7 +151,9 @@ for k in ks:
 print("key " + worst_char + " has the lowest value, " + str(characters[worst_char]))
 
 
-#8. Create a dictionary named letter_counts that contains each letter and the number of times it occurs in string1. Challenge: Letters should not be counted separately as upper-case and lower-case. Intead, all of them should be counted as lower-case.
+#8. Create a dictionary named letter_counts that contains each letter and the number of times it occurs in string1. 
+#Challenge: Letters should not be counted separately as upper-case and lower-case. 
+#Intead, all of them should be counted as lower-case.
 
 string1 = string1.lower()
 letter_counts = {}
@@ -141,7 +164,9 @@ for c in string1:
 print(letter_counts)
 
 
-#9. Create a dictionary called low_d that keeps track of all the characters in the string p and notes how many times each character was seen. Make sure that there are no repeats of characters as keys, such that “T” and “t” are both seen as a “t” for example.
+#9. Create a dictionary called low_d that keeps track of all the characters in the string p and notes how many times 
+#each character was seen. 
+#Make sure that there are no repeats of characters as keys, such that “T” and “t” are both seen as a “t” for example.
 
 p = p.lower()
 low_d = {}
