@@ -131,7 +131,7 @@ best_char = list(ks)[0]
 for k in ks:
     if characters[k] > characters[best_char]:
         best_char = k
-print("key " + best_char + " has the lowest value, " + str(characters[best_char]))
+print("key " + best_char + " has the highest value, " + str(characters[best_char]))
 
 
 #7. Find the least frequent letter. Create the dictionary characters that shows each character from string sally and its frequency. 
