@@ -1,4 +1,4 @@
-#1. Write a function, sublist, that takes in a list of numbers as the parameter. In the function, use a while loop to return a sublist of the input list. The sublist should contain the same values of the original list up until it reaches the number 5 (it should not contain the number 5).
+#1. Write a function, sublist, that takes in a list of numbers as the parameter. In the function, use a while loop to return a sublist #of the input list. The sublist should contain the same values of the original list up until it reaches the number 5 (it should not #contain the number 5).
 
 def sublist(mylist): 
     accum_lst=[]
@@ -12,7 +12,7 @@ def sublist(mylist):
 print(sublist([3,6,4,1,3,4,4,4,4]))
 
 
-#2. Write a function called check_nums that takes a list as its parameter, and contains a while loop that only stops once the element of the list is the number 7. What is returned is a list of all of the numbers up until it reaches 7.
+#2. Write a function called check_nums that takes a list as its parameter, and contains a while loop that only stops once the element of #the list is the number 7. What is returned is a list of all of the numbers up until it reaches 7.
 
 def check_nums(mylist): 
     accum_list = []
@@ -26,7 +26,7 @@ def check_nums(mylist):
 print(check_nums)
 
 
-#3. Write a function, sublist, that takes in a list of strings as the parameter. In the function, use a while loop to return a sublist of the input list. The sublist should contain the same values of the original list up until it reaches the string “STOP” (it should not contain the string “STOP”).
+#3. Write a function, sublist, that takes in a list of strings as the parameter. In the function, use a while loop to return a sublist #of the input list. The sublist should contain the same values of the original list up until it reaches the string “STOP” (it should not #contain the string “STOP”).
 
 def sublist(mylist): 
     accum_list = []
@@ -39,7 +39,7 @@ def sublist(mylist):
     return accum_list
     
     
-#4. Write a function called stop_at_z that iterates through a list of strings. Using a while loop, append each string to a new list until the string that appears is “z”. The function should return the new list.
+#4. Write a function called stop_at_z that iterates through a list of strings. Using a while loop, append each string to a new list #until the string that appears is “z”. The function should return the new list.
 
 def stop_at_z(mylist): 
     accum_list = []
@@ -51,7 +51,7 @@ def stop_at_z(mylist):
             break
     return accum_list  
     
-#5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable sum2. Once complete, sum2 should equal sum1.
+#5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop #instead of a for loop. Assign the accumulated total in the while loop code to the variable sum2. Once complete, sum2 should equal sum1.
 
 sum1 = 0
 
@@ -67,7 +67,7 @@ while(accum < len(lst)):
     accum += 1
 
 
-#6. Write a function called beginning that takes a list as input and contains a while loop that only stops once the element of the list is the string ‘bye’. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If “bye” is the 5th element, the first 4 are returned.) If you want to make this even more of a challenge, do this without slicing.
+#6. Write a function called beginning that takes a list as input and contains a while loop that only stops once the element of the list #is the string ‘bye’. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if #it stops on the 32nd element, the first 10 are returned. If “bye” is the 5th element, the first 4 are returned.) If you want to make #this even more of a challenge, do this without slicing.
 
 def beginning(mylist): 
     accum_list = []
@@ -78,3 +78,62 @@ def beginning(mylist):
         if len(mylist) ==accum_var:
             break
     return accum_list
+    
+    
+    
+#7. Create a function called mult that has two parameters, the first is required and should be an integer, the second is an optional #parameter that can either be a number or a string but whose default is 6. The function should return the first parameter multiplied by #the second.
+
+def mult(x, y = 6): 
+    return  x * y
+print(mult(""))
+
+#8. Write a function, test, that takes in three parameters: a required integer, an optional boolean whose default value is True, and an #optional dictionary, called dict1, whose default value is {2:3, 4:5, 6:8}. If the boolean parameter is True, the function should test #to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, #return the boolean value “False”.
+
+def test(a, b = True, dict1 = {2:3, 4:5, 6:8}):
+    return b and dict1.get(a, False)
+    
+
+#9. Write a function called checkingIfIn that takes three parameters. The first is a required parameter, which should be a string. The #second is an optional parameter called direction with a default value of True. The third is an optional parameter called d that has a #default value of {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}. Write the function #checkingIfIn so that when the second parameter is True, it checks to see if the first parameter is a key in the third parameter; if it #is, return True, otherwise return False.
+
+#But if the second paramter is False, then the function should check to see if the first parameter is not a key of the third. If it’s #not, the function should return True in this case, and if it is, it should return False.
+
+def checkingIfIn(req, direction = True, d =  {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}): 
+    if direction == True:
+        if req in d:
+            return True 
+        else:
+            return False
+    else:
+        if req not in d:
+            return True
+        else:
+            return False
+            
+#10. We have provided the function checkingIfIn such that if the first input parameter is in the third, dictionary, input parameter, #then the function returns that value, and otherwise, it returns False. Follow the instructions in the active code window for specific #variable assignmemts.
+
+def checkingIfIn(a, direction = True, d = {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}):
+    if direction == True:
+        if a in d:
+            return d[a]
+        else:
+            return False
+    else:
+        if a not in d:
+            return True
+        else:
+            return d[a]
+
+# Call the function so that it returns False and assign that function call to the variable c_false
+c_false = checkingIfIn( "peach")
+
+# Call the fucntion so that it returns True and assign it to the variable c_true
+c_true = c_true = checkingIfIn('apples', False)
+# Call the function so that the value of fruit is assigned to the variable fruit_ans
+fruit_ans = checkingIfIn("fruit")
+
+# Call the function using the first and third parameter so that the value 8 is assigned to the variable param_check
+param_check = checkingIfIn('potatos', False, {'carrots': 1, 'peas': 9, 'potatos': 8, 'corn': 32, 'beans': 1})
+
+
+
+
