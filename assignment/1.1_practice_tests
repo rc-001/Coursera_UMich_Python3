@@ -6,3 +6,10 @@ for i in str1:
 print(chars)
 
 
+#2. Find the number of lines in the file, travel_plans2.txt, and assign it to the variable num_lines.
+
+file = open("travel_plans2.txt","r")
+count = file.readlines()
+num_lines = len(count)
+
+
