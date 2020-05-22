@@ -1,0 +1,110 @@
+#Extra Exercises
+
+#Create a class called Bike that contains two instance variables, color and price. Assign to the variable testOne, 
+#an instance of Bike whose color is blue and price is 89.99. Assign to the variable testTwo, 
+#an instance of Bike whose color is purple and price is 25.
+
+class Bike:
+    def __init__(self, c, p): 
+        self.color = c 
+        self.price = p
+testOne = Bike("blue", 89.99)
+testTwo = Bike("purple", 25.0)
+
+
+1.1 Create a class called inst_var that defines two instance variables: num1 and num2. 
+#Then, create an instance where num1 is 6 and num2 is 10 and save this instance to the variable t.
+
+class int_var:
+    def __init__(self, c, p): 
+        self.num1 = c 
+        self.num2 = p
+t = int_var(6, 10)
+print(t.num1)
+print(t.num2)
+
+
+
+
+#2.2 Create a class called Animal that has two instance variables: arms and legs. 
+#Create a class method called limbs that, when called, returns the total number of limbs the animal has. 
+#To the variable name spider, assign an instance of Animal that has 4 arms and 4 legs. 
+#Call the limbs method on spider and save the result to the variable name spidlimbs.
+
+class Animal: 
+    
+    def __init__(self, a, l):
+        
+        self.arms = a 
+        self.legs = l
+        
+    def limbs(self):
+        return self.arms + self.legs
+
+spider =  Animal(4, 4)
+spidlimbs = spider.limbs()
+print(spidlimbs)
+        
+
+#3. Create a class called bank that contains two instance variables, name and amt. 
+#Add the instance method that allows you to customize the message returned when you print the instance 
+#so that it says “Your account, [name goes here], has [start_amt goes here] dollars.” 
+#Create an instance of this class with “Bob” as the name and 100 as the amount. 
+#Save this to the variable t1.
+
+class bank: 
+    def __init__(self, n, a):
+        self.name = n
+        self.amt = a
+    def __str__(self):
+        return "Your account, {}, has {} dollars.".format(self.name, self.amt)
+t1 = bank("Bob", 100)
+print(t1)
+
+
+
+#3.1 3.1 Create a class called Sports that contains 2 instance variables, name and number_of_players. 
+#Add the instance method that allows you to customize the message returned when you print the 
+#instance so that it says “The name of this sport is [name goes here] and [number_of_players goes here] 
+#people create one team!” Create two instances of the class, one assigned to the 
+#variable football_info and one called quidditch_info. The first uses football as the name and has 11 players, 
+#the second uses quidditch as the name and has 7 players.
+
+
+class Sports:
+    def __init__(self, na, np):
+        self.name = na
+        self.number_of_players = np
+    def __str__(self):
+        return "The name of the sport is {} and {} people create one team!".format(self.name, self.number_of_players)
+football_info = Sports("football", 11)
+quidditch_info = Sports("quidditch", 7)
+
+
+#3.2 Create a class called Cereal that has three instance variables: name, brand, and fiber. 
+#When an instance of Cereal is printed, the user should see the following: “[name] 
+#cereal is produced by [brand] and has [fiber] grams of fiber in every serving!” 
+#To the variable name c1, assign an instance of Cereal whose name is Corn Flakes, brand is Kellogg’s, and fiber is 2. 
+#To the variable name c2, assign an instance of Cereal whose name is Honey Nut Cheerios, brand is General Mills, 
+#and fiber is 3. Practice printing both!
+
+
+class Cereal: 
+    def __init__(self, n, b, f): 
+        self.name = n
+        self.brand = b
+        self.fiber = f
+    def __str__(self): 
+        return  "{} cereal is produced by {} and has {} grams of fiber in every serving!".format(self.name, self.brand, self.fiber)
+   
+c1 = Cereal("Corn Flakes", "Kellogg's", 2)
+c2 = Cereal("Honey Nut Cheerios", "General Mills", 3)
+
+
+
+
+
+
+
+
+
