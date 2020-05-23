@@ -23,6 +23,19 @@ t = int_var(6, 10)
 print(t.num1)
 print(t.num2)
 
+1.2 Create a class called House that has three instance variables: color, rooms, and price. To the variable name houseOne, 
+#assign an instance of House whose color is white, has 3 rooms, and costs 50000. 
+#To the variable name houseTwo, assign an instance of House whose color is red, has 9 rooms, and costs 1000000.
+
+class House: 
+    def __init__(self, c, r, p): 
+        self.color = c
+        self.rooms = r
+        self.price = p
+houseOne = House("white", 3, 50000)
+houseTwo = House("red", 9, 1000000)
+
+
 
 
 
